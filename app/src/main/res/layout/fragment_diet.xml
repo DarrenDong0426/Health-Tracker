@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_DietFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:id="@+id/calories"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:fontFamily="sans-serif"
+            android:text="Calories\n600"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/fats"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calories"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+
+            android:fontFamily="sans-serif"
+            android:text="Fats\n24"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/carbs"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calories"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/fats"
+
+            android:fontFamily="sans-serif"
+            android:text="Carbs\n42"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/protein"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calories"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/fats"
+
+            android:fontFamily="sans-serif"
+            android:text="Proteins\n53"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_DietFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/addMeal"
+            android:layout_below="@id/carbs" />
+
+        <Button
+            android:id="@+id/addMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-9dp"
+            android:backgroundTint="#cda901" />
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
